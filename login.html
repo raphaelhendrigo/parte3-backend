@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" type="text/css" href="aula2.css" />
+    <title>Login - Atividade 2</title>
+  </head>
+  <script language="javascript" type="text/javascript">
+    <!--Begin
+    function Login() {
+      var done = 0;
+      var login = document.login.nome.value;
+      var senha = document.login.senha.value;
+      login = login.toLowerCase();
+      senha = senha.toLowerCase();
+      if (login == "adm" && senha == "abc") {
+        window.open("home.html", true);
+        done = 1;
+      }
+      if (done == 0) {
+        alert("Login ou senha estão incorretos!!!!");
+      }
+    }
+    //End-->
+  </script>
+  <body id="pagina">
+    <h2>Login</h2>
+    <form name="login">
+      <label>Login:</label>
+      <input type="text" name="nome" size="114" />
+      <p>
+        <label>Senha:</label> <input type="password" name="senha" size="113" />
+      </p>
+      <p>
+        <input type="submit" name="enviar" value="entrar" onClick="Login()" />
+        &nbsp; <input type="reset" name="cancelar" value="cancelar" />
+      </p>
+    </form>
+
+    <div id="footer">
+      &nbsp;
+      <p>Pós-graduação em Desenvolvimento Web e Mobile - IFSUDESTEMG.</p>
+      &nbsp;
+    </div>
+  </body>
+</html>
